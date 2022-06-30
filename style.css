@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.heading{
+    width:100%;
+    background-color: rgb(19, 19, 19);
+    height:15vh;
+}
+
+.headingText{
+    font-size:6vh;
+    color:white;
+    padding-left:2vw;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    font-family: 'Arima', cursive;
+    text-shadow: 2px 2px 5px rgb(130, 130, 138);
+}
+
