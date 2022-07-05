@@ -8,15 +8,44 @@
     width:100%;
     background-color: rgb(19, 19, 19);
     height:15vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.headingText{
-    font-size:6vh;
-    color:white;
-    padding-left:2vw;
+.leftHeading{
+    margin:1vw;
+
+    /* padding-left:2vw;
     padding-top: 3vh;
-    padding-bottom: 2vh;
+    padding-bottom: 2vh; */
+}
+.leftHeadingContent{
+    color:white;
+    margin:1vw;
+    font-size:6vh;
     font-family: 'Arima', cursive;
     text-shadow: 2px 2px 5px rgb(130, 130, 138);
+}
+
+.leftExpand{
+    margin:1vw;
+    background-color: black;
+    width:4vw;
+}
+
+.expand{
+    font-size:6vh;
+    color:white;
+    /* height:8vh; */
+}
+
+.rightHeading{
+    margin:1vw;
+}
+
+#loginButton{
+    font-size:3vh;
 }
 
