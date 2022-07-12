@@ -1,6 +1,7 @@
 const express=require("express");
 const path=require("path");
 const hbs=require("hbs");
+let port= process.env.PORT || 8000;
 
 const app=express();
 const staticPath=path.join(__dirname,"../public");
@@ -19,6 +20,6 @@ app.get("/profile",(req,res)=>
 {
     res.render("profile");
 });
-app.listen(8000);
+app.listen(port);
 
 
