@@ -221,6 +221,20 @@ async function start(){
 
 }
 start();
+
+let btn=document.querySelector('.leftExpand');
+
+btn.addEventListener('click',()=>
+{
+    console.log("clicked");
+    let content=document.querySelector('.expandContent');
+    let current=content.style.display;
+    if(current=="inherit")
+    content.style.display = "none";
+    else
+    content.style.display = "inherit";
+})
+
 setTimeout(()=>{
 if(ccCheck==false && cfCheck==false && lcCheck==false){
     alert("Check your internet connection");

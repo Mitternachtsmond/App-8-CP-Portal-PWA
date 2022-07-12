@@ -65,7 +65,7 @@ body{
     z-index: 1;
     height:100vh;
     background-color:rgb(69, 64, 64);
-    display:none;
+    display:none ;
     /* margin:5vw; */
 }
 .listItems{
