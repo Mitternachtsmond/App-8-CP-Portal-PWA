@@ -61,24 +61,28 @@
 .leftContent{
     width:70%;
     margin:1vw;
-    border:1px solid black;
+    border:3px outset black;
     display:flex;
+    padding-top:2vw;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .leftSubContent{
     margin:1vw;
-    border:1px solid green;
-    border-radius:5px;
+    border:1px solid rgb(167, 161, 161);
+    border-radius:10px;
     width:90%;
     height:20vh;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
 }
 
 .rightContent{
     width:25%;
     margin:1vw;
-    border:1px solid black;
+    border:3px outset black;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -87,10 +91,61 @@
 .rightTopContent, .rightDownContent{
     margin:1vw;
     width:90%;
-    border:1px solid green;
+    border:1px solid rgb(167, 161, 161);
     border-radius:5px;
     height:50vh;
 }
 
+.platformIcon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:15%;
+}
 
+.platformIconImg{
+    width:80%;
+    height:85%;
+}
 
+.contestInfo{
+    display:flex;
+    margin-left:3vw;
+    flex-direction: column;
+    width:55%;
+    height:80%;
+    /* border:1px solid yellow; */
+}
+.contestName{
+    font-size:3vh;
+    color:white;
+    font-weight:2px;
+}
+
+.contestStartTime{
+    margin-top:1vw;
+    font-size:2.5vh;
+    color:white;
+}
+
+.contestEndTime{
+    font-size:2.5vh;
+    color:white;
+    direction:rtl;
+}
+.contestLink{
+    width:10%;
+    height:80%;
+    margin-left:auto;
+    margin-right:1vw;
+    background-color: rgb(95, 93, 93);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+#contestLinkImage{
+    width:100%;
+}
