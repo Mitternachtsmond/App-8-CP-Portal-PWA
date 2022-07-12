@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.login{
+	text-align: center;
+	font-size: 16px;
+	float: right;
+}
+
+#mainContent{
+	background-color: #7A7A7A;
+}
+.menu{
+	float: left;
+	padding: 2px;
+	background-color: #002129;
+	border: none;
+}
+.siteName{
+	padding-left: 15px;
+	color: #DCE270;
+	
+	font-size: 50px;
+	text-align: center;
+}
+.heading{
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+	background-color: #002129;
+	border-bottom: 1px dashed black;
+}
+.leftMain{
+	font-family: 'Edu SA Beginner', cursive;
+	width: 70%;
+	border: 2px solid black;
+	height: 90%;
+	display: inline-block;
+	text-align: center;
+
+}
+.rightMain{
+	font-family: 'Edu SA Beginner', cursive;
+	float: right;
+	width: 30%;
+	border: 2px solid black;
+	display: inline-block;
+	text-align: center;		
+}
+.login{
+	display: inline-block;
+	padding: 15px;
+	color: #344055;
+	background-color: #CFB3CD;
+	border-radius: 8px;
+}
