@@ -14,11 +14,11 @@ app.set("views",viewPath);
 
 app.get("/",(req,res)=>
 {
-    res.render("index");
+    res.render("index.hbs");
 });
 app.get("/profile",(req,res)=>
 {
-    res.render("profile");
+    res.render("profile.hbs");
 });
 app.listen(port);
 
