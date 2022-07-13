@@ -1,0 +1,24 @@
+{
+  "name": "app-8-cp-portal-pwa",
+  "version": "1.0.0",
+  "description": "some changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitternachtsmond/App-8-CP-Portal-PWA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitternachtsmond/App-8-CP-Portal-PWA/issues"
+  },
+  "homepage": "https://github.com/Mitternachtsmond/App-8-CP-Portal-PWA#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}

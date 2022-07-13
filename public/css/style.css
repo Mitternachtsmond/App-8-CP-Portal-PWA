@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    position:relative;
+}
+
 
 
 .heading{
+    position: absolute;
+    z-index: 10;
     width:100%;
     background-color: rgb(19, 19, 19);
     height:15vh;
@@ -18,7 +24,7 @@
 
 .leftHeading{
     margin:1vw;
-
+    z-index: 10;
     /* padding-left:2vw;
     padding-top: 3vh;
     padding-bottom: 2vh; */
@@ -51,7 +57,42 @@
     font-size:3vh;
 }
 
+.expandContent{
+    width:30%;
+    border: 10px solid black;
+    position:absolute;
+    top:0;
+    z-index: 1;
+    height:100vh;
+    background-color:rgb(69, 64, 64);
+    display:none ;
+    /* margin:5vw; */
+}
+.listItems{
+    height:75%;
+    margin:5vw;
+    margin-top:20vh;
+    padding:2vw 0; 
+    display: flex;
+    flex-direction: column;
+}
+li{
+    border-bottom: 5px solid black;
+    margin-bottom:4vw;
+    font-size:4vh;
+    color:white;
+    list-style: none;
+}
+li:hover {
+    border-bottom: 5px solid skyblue;
+    font-size:5vh;
+}
+.linkTo{
+    text-decoration: none;
+}
 .main{
+    position:absolute;
+    top:15vh;
     display:flex;
     flex-direction: row;
     width:100%;
@@ -148,4 +189,65 @@
 }
 #contestLinkImage{
     width:100%;
+}
+
+
+@media screen and (max-width: 768px){
+    .leftHeadingContent{
+        font-size: 3vh;
+    }
+    .leftExpand{
+        width:3vw;
+    }
+    .expand{
+        font-size:3vh;
+    }
+    #loginButton{
+        font-size: 1vh;
+    }
+    .expandContent{
+        width:75%;
+    }
+    .listItems{
+        margin:3vw;
+        margin-top:20vh;
+    }
+    li{
+        font-size:2.5vh;
+    }
+    li:hover{
+        font-size: 3vh;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .rightContent{
+        width:100%;
+        /* justify-content: center;
+        align-content: center;
+        justify-items: center; */
+        align-items: center;
+    }
+    .rightTopContent, .rightDownContent{
+        width:90%;
+        height:10vh;
+    }
+    .leftContent{
+        width:100%;
+    }
+    .leftSubContent{
+        height: 15vh;
+    }
+    .platformIcon{
+        height:50%
+    }
+    .contestName{
+        font-size:2vh;
+    }
+    .contestStartTime{
+        font-size:1.5vh;
+    }
+    .contestEndTime{
+        font-size:1.5vh;
+    }
 }
