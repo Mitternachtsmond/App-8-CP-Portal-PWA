@@ -21,7 +21,7 @@
 	padding: 2px;
 	background-color: #002129;
 	border: none;
-	font-size: 16px;
+	font-size: 50px;
 }
 .menuButton:hover, .menuButton:focus{
 	background-color: #2980B9;
@@ -106,3 +106,4 @@
 .menuContent a:hover{
 	background-color: #2980B9;
 }
+.show {display:block;} 
