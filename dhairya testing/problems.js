@@ -13,3 +13,6 @@ function myFunction() {
       }
     }
   } 
+
+// i dont quite understand this code rn but i will soon after seeing the js projects
+// here's the link for it https://www.w3schools.com/howto/howto_js_dropdown.asp
