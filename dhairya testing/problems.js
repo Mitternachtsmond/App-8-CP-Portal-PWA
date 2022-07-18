@@ -16,3 +16,18 @@ function myFunction() {
 
 // i dont quite understand this code rn but i will soon after seeing the js projects
 // here's the link for it https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+const problemName = document.querySelector('.problemName')
+const rating = document.querySelector('.rating')
+
+const problemData = () => {
+
+
+  fetch('https://codeforces.com/api/problemset.problems')
+  .then((res) => {
+    console.log(res.json());
+  }).catch((error) => {
+    console.log(error);
+  } )
+}
+problemData();
