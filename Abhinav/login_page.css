@@ -1,15 +1,4 @@
-        /* .box{
-            border:black;
-            height: 400px;
-            width: 300px;
-            background-color:rgba(0, 0, 0, 0.534);
-        }
-        #box
-        {
-            position: relative;
-            left:300px;
-            top:100px;
-        } */
+        
         .btn
         {
             position: relative;
@@ -102,63 +91,7 @@
             top:210px;
             left:120px;
         }
-        /* .username
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:40px;
-            left:5px;
-        }
-        .name
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:60px;
-            left:35px;
-        }
-        .age
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:80px;
-            left:50px;
-        }
-        .institute
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:100px;
-            left:20px;
-        }
-        .email
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:120px;
-            left:15px;
-        }
-        .password
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:140px;
-            left:5px;
-        }
-        .submit
-        {
-            font-family: sans-serif;
-            position: relative;
-            top:180px;
-            left:110px;
-        }
-        .reg
-        {
-            position: relative;
-            left:50px;
-            top:5px;
-            font-size: x-large;
-            font-family:Arial, Helvetica, sans-serif;
-        } */
+        
         @media screen and (max-width: 768px){
             .leftHeadingContent{
                 font-size: 3vh;
