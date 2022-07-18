@@ -7,89 +7,6 @@
 body{
     position:relative;
 }
-
-
-
-.heading{
-    position: absolute;
-    z-index: 10;
-    width:100%;
-    background-color: rgb(19, 19, 19);
-    height:15vh;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.leftHeading{
-    margin:1vw;
-    z-index: 10;
-    /* padding-left:2vw;
-    padding-top: 3vh;
-    padding-bottom: 2vh; */
-}
-.leftHeadingContent{
-    color:white;
-    margin:1vw;
-    font-size:6vh;
-    font-family: 'Arima', cursive;
-    text-shadow: 2px 2px 5px rgb(130, 130, 138);
-}
-
-.leftExpand{
-    margin:1vw;
-    background-color: black;
-    width:4vw;
-}
-
-.expand{
-    font-size:6vh;
-    color:white;
-    /* height:8vh; */
-}
-
-.rightHeading{
-    margin:1vw;
-}
-
-#loginButton{
-    font-size:3vh;
-}
-
-.expandContent{
-    width:30%;
-    border: 10px solid black;
-    position:absolute;
-    top:0;
-    z-index: 1;
-    height:100vh;
-    background-color:rgb(69, 64, 64);
-    display:none ;
-    /* margin:5vw; */
-}
-.listItems{
-    height:75%;
-    margin:5vw;
-    margin-top:20vh;
-    padding:2vw 0; 
-    display: flex;
-    flex-direction: column;
-}
-li{
-    border-bottom: 5px solid black;
-    margin-bottom:4vw;
-    font-size:4vh;
-    color:white;
-    list-style: none;
-}
-li:hover {
-    border-bottom: 5px solid skyblue;
-    font-size:5vh;
-}
-.linkTo{
-    text-decoration: none;
-}
 .main{
     position:absolute;
     top:15vh;
@@ -193,31 +110,7 @@ li:hover {
 
 
 @media screen and (max-width: 768px){
-    .leftHeadingContent{
-        font-size: 3vh;
-    }
-    .leftExpand{
-        width:3vw;
-    }
-    .expand{
-        font-size:3vh;
-    }
-    #loginButton{
-        font-size: 1vh;
-    }
-    .expandContent{
-        width:75%;
-    }
-    .listItems{
-        margin:3vw;
-        margin-top:20vh;
-    }
-    li{
-        font-size:2.5vh;
-    }
-    li:hover{
-        font-size: 3vh;
-    }
+
     .main{
         flex-direction: column-reverse;
     }

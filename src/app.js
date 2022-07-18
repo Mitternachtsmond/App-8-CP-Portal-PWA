@@ -20,6 +20,11 @@ app.get("/profile",(req,res)=>
 {
     res.render("profile.hbs");
 });
+
+app.get("/problems",(req,res)=>
+{
+    res.render("problems.hbs");
+});
 app.listen(port);
 
 

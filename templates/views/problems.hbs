@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/problems.css">
+<link rel="stylesheet" href="css/common_css/header.css">
 <title >CP Portal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,12 +11,7 @@
 </head>
 
 <body id = "mainContent">
-<div class="headingContainer">
-        
-    <button class = "login">Login</button>
-    <span class="siteName">CP Portal</span>
-    <button class="menu"> <img src="menuButton.png"></button>
-</div>
+{{>header}}
 <div class="contentContainer">
     <div class = "leftContent">
         leftContent 
@@ -25,5 +21,7 @@
         <div class = "rightBottom">rightBottom</div>
     </div>
 </div>
+<script src="script/problems.js"></script>
+<script src="script/common_script/header.js"></script>
 </body>
 </html> 
