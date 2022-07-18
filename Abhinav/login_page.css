@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!-- <style>
-         .box{
+        /* .box{
             border:black;
             height: 400px;
             width: 300px;
@@ -18,7 +10,7 @@
             left:300px;
             top:100px;
         } */
-         .btn
+        .btn
         {
             position: relative;
             top:16px;
@@ -110,7 +102,7 @@
             top:210px;
             left:120px;
         }
-        .username
+        /* .username
         {
             font-family: sans-serif;
             position: relative;
@@ -166,55 +158,64 @@
             top:5px;
             font-size: x-large;
             font-family:Arial, Helvetica, sans-serif;
+        } */
+        @media screen and (max-width: 768px){
+            .leftHeadingContent{
+                font-size: 3vh;
+            }
+            .leftExpand{
+                width:3vw;
+            }
+            .expand{
+                font-size:3vh;
+            }
+            #loginButton{
+                font-size: 1vh;
+            }
+            .expandContent{
+                width:75%;
+            }
+            .listItems{
+                margin:3vw;
+                margin-top:20vh;
+            }
+            li{
+                font-size:2.5vh;
+            }
+            li:hover{
+                font-size: 3vh;
+            }
+            .main{
+                flex-direction: column-reverse;
+            }
+            .rightContent{
+                width:100%;
+                /* justify-content: center;
+                align-content: center;
+                justify-items: center; */
+                align-items: center;
+            }
+            .rightTopContent, .rightDownContent{
+                width:90%;
+                height:10vh;
+            }
+            .leftContent{
+                width:100%;
+            }
+            .leftSubContent{
+                height: 15vh;
+            }
+            .platformIcon{
+                height:50%
+            }
+            .contestName{
+                font-size:2vh;
+            }
+            .contestStartTime{
+                font-size:1.5vh;
+            }
+            .contestEndTime{
+                font-size:1.5vh;
+            }
         }
-    </style>  -->
-</head>
-<body> 
-    <button class="btn">☰</button>
-    <p class="heading">CP PORTAL</p>
-    <button class="bt">Login/Signup</button>
-    <!-- <div class="box" id="box">
-    <h class="reg">Register in CP Portal</h>
-    <form action="backend.php">
-        <div class="username">
-            Username:<input type="text">
-        </div>
-        <div class="name">
-            Name:<input type="text">
-        </div>
-        <div class="age">
-            Age:<input type="text">
-        </div>
-        <div class="institute">
-            Institute:<input type="text">
-        </div>
-        <div class="email">
-            Email ID:<input type="text">
-        </div>
-        <div class="password">
-            Password:<input type="text">
-        </div>
-        <button class="submit">Register</button>
-    </form>
-</div> -->
-<div class="box1" id="box1">
-    <h class="login">Login</h>
-    <form action="backend.php">
-        <div class="username1">
-            Username:<input type="text">
-        </div>
-        <div class="password1">
-                Password:<input type="text">
-            </div>
-            <button class="submit1">Login</button>
-            <div>
-                <a href="" class="forgotpass">Forgot Password?</a>
-            </div>
-            <div>
-                <a href="" class="usegmail">Use Gmail</a>
-            </div>
-            <button class="btn1">Signup</button>
-        </form>
-    </div>
-</body>
-</html>
+        
