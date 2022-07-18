@@ -2,8 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-   
-    
 }
 
 
@@ -53,11 +51,11 @@
 
 
 }
-.box{
+/* .box{
     display:inline-flexbox;
     height: 54vh;
     width: 100%;
-}
+} */
 .item{
     background-color: white;
     text-align: center;
