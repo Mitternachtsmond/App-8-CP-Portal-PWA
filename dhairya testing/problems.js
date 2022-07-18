@@ -21,7 +21,7 @@ const problemName = document.querySelector('.problemName')
 const rating = document.querySelector('.rating')
 
 const problemData = () => {
-
+  
 
   fetch('https://codeforces.com/api/problemset.problems')
   .then((res) => res.json())

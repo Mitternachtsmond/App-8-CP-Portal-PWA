@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("bg.jpg");
+}
+
+.siteLogo{
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.emptyTop{
+    width: 100vw;
+    height:10vh;
+}
+.emptyBottom{
+    width: 100vw;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verticalLine{
+    width: 0vw;
+    height: inherit;
+    border-style: solid;
+    border-width: 0 0 0 .25px;
+    border-color: white;
+}
+.logoHolder{
+    width: 26vh;
+    height: 26vh;
+    border-radius: 13vh;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 20vh;
+    height: 20vh;
+    
+}
+.contentContainer{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.problemHolder{
+    display: flex;
+    height: 35vh;
+    width: 45vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-width: .5px 0 .5px 0;
+    border-style: solid;
+    border-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+.problemName{
+    font-size: 12vh;
+    padding-top: 5vh;
+    font-weight: 600;
+}
+.otherDetails{
+    height: 18vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5vh;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+}
+.buttonHolder{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.filter{
+    padding: 0.5vh .5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: transparent;
+}
+.sort{
+    padding: 0.5vh .5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: transparent;
+    border-top-left-radius: 0.1vw;
+    border-bottom-right-radius: 0.1vw;
+}
+.shuffle{
+    padding: 0.5vh .5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: transparent;
+}
