@@ -54,9 +54,12 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: start;
-    height:55vh;
+    height:fit-content;
     align-items: center;
+    position:sticky;
+
 }
+
 
 .platformIcon{
     display:flex;
@@ -194,6 +197,7 @@ body{
 .donePlatformButton{
     font-size:2.5vh;
     padding:0.5vh;
+    margin-bottom:3vh;
 }
 
 .donePlatformButton:hover{
@@ -201,6 +205,38 @@ body{
     border:2px solid blue;
     background-color:rgb(45, 42, 42);
     color:white;
+}
+.sortHeading{
+    font-size:5vh;
+    color:white;
+    margin:2vh;
+    padding:1vh;
+    border-width:0 0 2px 0;
+    border-color:white;
+    border-style:solid;
+    width:78%;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.sortGroups{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:2vh;
+    
+}
+.sortSubGroup{
+    display:table-cell;
+    column-width: 10vw;
+}
+
+.sortLabel{
+    color:white;
+    font-size:2.5vh;
+    margin:1vh;
 }
 @media screen and (max-width: 768px){
 
