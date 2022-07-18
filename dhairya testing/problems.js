@@ -24,9 +24,12 @@ const problemData = () => {
 
 
   fetch('https://codeforces.com/api/problemset.problems')
-  .then((res) => {
-    console.log(res.json());
-  }).catch((error) => {
+  .then((res) => res.json())
+  .then((data) => {
+      problemName.innerHTML = data.result.problems[0].name 
+      rating.innerHTML = data.result.problems[0].points
+  })
+  .catch((error) => {
     console.log(error);
   } )
 }
