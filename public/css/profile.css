@@ -6,7 +6,9 @@
 
 
 
-
+.emptyContainer{
+    height:22vh;
+}
 
 .main{
     display:flex;
