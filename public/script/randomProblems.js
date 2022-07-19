@@ -1,23 +1,3 @@
-
-function showMenu() {
-  document.getElementById("myMenu").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.menuButton')) {
-    var dropdowns = document.getElementsByClassName("menuContent");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-} 
-
-// i dont quite understand this code rn but i will soon after seeing the js projects
-// here's the link for it https://www.w3schools.com/howto/howto_js_dropdown.asp
-
 const problemName = document.querySelector('.problemName')
 const rating = document.querySelector('.rating')
 const tag = document.querySelector('.tags')
@@ -32,7 +12,6 @@ const problemData = async () => {
     let res=await fetch('https://codeforces.com/api/problemset.problems')
     let data=await res.json();
     let len=data.result.problems.length;
-    console.log(len);
     for(let i=0;i<len;i++)
     {
       if (data.result.problems[i].rating){
@@ -46,7 +25,6 @@ const problemData = async () => {
       arrayOfData.push(obj);
       }
     }
-    console.log("done");
 }
 
 
@@ -65,7 +43,6 @@ const relink = () =>{
 const mainfunction=async()=>
 {
 await problemData();
-console.log("here");
 printData();
 }
 mainfunction();
