@@ -1,6 +1,7 @@
 let montharr=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let array=[];
 let leftContent = document.querySelector(".leftContent");
+let filterDate=document.getElementById("inputDate");
 const changeDate =(date)=>
 {
     let day=date.getDate();
