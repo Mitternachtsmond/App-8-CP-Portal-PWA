@@ -25,6 +25,10 @@ app.get("/randomProblems",(req,res)=>
 {
     res.render("randomProblems.hbs");
 });
+app.get("/login",(req,res)=>
+{
+    res.render("login.hbs");
+});
 app.listen(port);
 
 
