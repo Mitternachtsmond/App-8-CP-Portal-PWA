@@ -31,7 +31,7 @@ body{
     border:1px solid rgb(167, 161, 161);
     border-radius:10px;
     width:90%;
-    height:20vh;
+    height:22vh;
     display:flex;
     flex-direction: row;
     align-items:center;
@@ -194,6 +194,12 @@ body{
     margin-right:1.5vw;
 }
 
+.platformButton{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .doneFilterButton , .doneSortButton{
     font-size:2.5vh;
     padding:0.5vh;
@@ -242,6 +248,7 @@ body{
 
     .main{
         flex-direction: column-reverse;
+        top:10vh;
     }
     .rightContent{
         width:100%;
@@ -252,13 +259,134 @@ body{
     }
     .rightTopContent, .rightDownContent{
         width:90%;
-        height:10vh;
+        height:fit-content;
+    }
+    .rightDownContent{
+        width:90%;
+        height:fit-content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .sortHeading{
+        font-size:3vh;
+        border:none;
+        padding:0.25vh;
+        width:fit-content;
+    }
+    .sortGroups{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        margin:1vh;       
+    }
+    .sortSubGroup{
+        display:table-cell;
+        column-width: 10vw;
+        padding:1vh;
+    }
+    .sortLabel{
+        color:white;
+        font-size:1.5vh;
+        margin:1.0vh;
+    }
+    .doneSortButton{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .filterHeading{
+        font-size:3vh;
+        color:white;
+        margin:0.5vh;
+    }
+
+    .platformFilter{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:1vh 0vh;
+        border:none;
+        width:100%;
+    }
+    
+    .platformFilterHeading{
+        color:white;
+        font-size:2vh;
+        margin-left:1.5vh;
+    }
+    
+    .platformGroups{
+        padding:0.5vw 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .platformSubGroups1,.platformSubGroups2,.platformSubGroups3{
+        margin-left:0.5vh;
+        margin-right: 0.5vh;
+        display:flex;
+        flex-direction: row;
+    }
+    
+    .platformSubGroups2,.platformSubGroups3{
+        margin-left:1vh;
+    }
+    .platformSubGroups3{
+        margin-right:1.5vh;
+    }
+    
+    .platformLabel{
+        /* margin-left:1vh; */
+        color:white;
+        font-size:1.4vh;
+    }
+    
+    #codeforcesCB, #codechefCB, #leetcodeCB{
+        margin-left:0.5vw;
+    }
+    
+    .dateFilter{
+        margin:0.5vh 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        padding:1vh 0; 
+        border:none;
+        width:100%;
+    }
+    .dateFilterHeading{
+        display: none;
+    }
+    .dateContent{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border:1px solid yellow; */
+    }
+    #dateWritten{
+        color:white;
+        font-size:2vh;
+        margin-right:1.5vw;
+    }
+    
+    .platformButton{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .doneFilterButton{
+        font-size:2vh;
     }
     .leftContent{
         width:100%;
     }
     .leftSubContent{
-        height: 15vh;
+        height: 18vh;
     }
     .platformIcon{
         height:50%

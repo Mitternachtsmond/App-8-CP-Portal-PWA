@@ -1,7 +1,6 @@
 let montharr=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let array=[];
 let leftContent = document.querySelector(".leftContent");
-let filterDate=document.getElementById("inputDate");
 const changeDate =(date)=>
 {
     let day=date.getDate();
@@ -216,9 +215,12 @@ const printArray=async ()=>
         lastchild=leftContent.lastElementChild;
     }
     let cfState,ccState,lcState;
+    let filterDate=document.getElementById("inputDate").value;
     cfState=document.getElementById("codeforcesCB").checked;
     ccState=document.getElementById("codechefCB").checked;
     lcState=document.getElementById("leetcodeCB").checked;
+    let dateInMs=new Date(filterDate).getTime();
+    console.log(dateInMs);
     let timesort=document.getElementById("timeSort").checked;
     if(timesort){
     array.sort(function (a,b){
@@ -241,9 +243,11 @@ const printArray=async ()=>
         let element=array[i];
         if((cfState && element.platformName=="codeforces") || (ccState && element.platformName=="codechef") || (lcState && element.platformName=="leetcode"))
         {
-            console.log("here");
+            // console.log("here");
+            if(element.time<=dateInMs){
             let htmlToAdd=getHTMLtoAdd(element.image,element.name,element.date,element.duration,element.link);
             leftContent.insertAdjacentHTML("beforeend",htmlToAdd);
+            }
         }
     };
 }

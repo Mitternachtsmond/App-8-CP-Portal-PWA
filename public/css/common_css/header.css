@@ -92,6 +92,9 @@ li:hover {
 }
 
 @media screen and (max-width: 768px){
+    .heading{
+        height: 10vh;
+    }
     .leftHeadingContent{
         font-size: 3vh;
     }
