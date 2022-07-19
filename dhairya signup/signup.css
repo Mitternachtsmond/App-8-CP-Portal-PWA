@@ -16,7 +16,7 @@
 
 .siteLogo{
   width: 100vw;
-  height: 25vh;
+  height: 15vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -24,7 +24,7 @@
 }
 .emptyTop{
   width: 100vw;
-  height:10vh;
+  height:5vh;
 }
 .emptyBottom{
   width: 100vw;
@@ -41,8 +41,8 @@
   border-color: white;
 }
 .logoHolder{
-  width: 21vh;
-  height: 21vh;
+  width: 10vh;
+  height: 10vh;
   border-radius: 11.5vh;
   border-style: solid;
   border-width: 0.5px;
@@ -52,8 +52,8 @@
   justify-content: center;
 }
 .logo{
-  width: 15vh;
-  height: 15vh;
+  width: 5vh;
+  height: 5vh;
   
 }
 .loginForm{
@@ -67,14 +67,14 @@
 .contentContainer{
   display: flex;
   width: 100vw;
-  height: 65vh;
+  height: 85vh;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 .loginHolder{
   display: flex;
-  height: 42vh;
+  height: 70vh;
   width: 35vw;
   justify-content: center;
   flex-direction: column;
@@ -99,7 +99,7 @@
   width: inherit;
 }
 .loginContainer{
-  height: 18vh;
+  height: 45vh;
   width: 45vw;
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
   font: inherit;
 }
 .buttonHolder{
-  height: 15vh;
+  height: 8vh;
   width: 45vw;
   display: flex;
   flex-direction: row;
@@ -167,14 +167,18 @@
   height: 5vh;
   
 }
-
-button.signupContainer:hover{
+button.shuffleContainer:hover{
+  background-color: black;
+  opacity: 0.5;
+  transition-duration: 0.7s;
+}
+button.sortContainer:hover{
   background-color: black;
   opacity: 0.5;
   transition-duration: 0.7s;
   
 }
-button.submitContainer:hover{
+button.filterContainer:hover{
   background-color: black;
   opacity: 0.5;
   transition-duration: 0.7s;

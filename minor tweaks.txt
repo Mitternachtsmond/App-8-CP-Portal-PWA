@@ -1,0 +1,7 @@
+A list of small changes planned to make the UI better:
+-make the login button bigger
+-add onclick to login/signup/problems page
+-add proper top images to login/signup page
+-add proper border color to login/signup/problems page in terms of vw or vh
+
+
