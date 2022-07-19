@@ -1,0 +1,220 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("bg.jpg");
+  align-items: flex-end;
+}
+
+.siteLogo{
+  width: 100vw;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+.emptyTop{
+  width: 100vw;
+  height:10vh;
+}
+.emptyBottom{
+  width: 100vw;
+  height:4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verticalLine{
+  width: 0vw;
+  height: inherit;
+  border-style: solid;
+  border-width: 0 0 0 .25px;
+  border-color: white;
+}
+.logoHolder{
+  width: 21vh;
+  height: 21vh;
+  border-radius: 11.5vh;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 15vh;
+  height: 15vh;
+  
+}
+.loginForm{
+  display: flex;
+  flex-direction: column;
+}
+.contentContainer{
+  display: flex;
+  width: 100vw;
+  height: 65vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.loginHolder{
+  display: flex;
+  height: 35vh;
+  width: 35vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-width: .25px 0 .25px 0;
+  border-style: solid;
+  border-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  
+  
+}
+.loginText{
+  letter-spacing: 0.20vw;
+  text-align: center;
+  font-size: 5.5vh;
+  padding-top: 5vh;
+  font-weight: 600;
+  text-overflow: ellipsis;    
+  white-space: nowrap;
+  overflow: hidden;
+  width: inherit;
+}
+.loginContainer{
+  height: 18vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5vh;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.15vw;
+}
+.username{
+  text-transform: uppercase;
+  padding: 1vh 1vw;
+  background-color: transparent;
+  border-top-left-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+  border-style: solid;
+  border-width: .25px 0 .25px 0.25px;
+  font: inherit;
+  color: white;
+}
+.password{
+  color: white;
+  background-color: transparent;
+  border-top-right-radius: 0.5vw;
+  padding: 1vh 1vw;
+  border-bottom-right-radius: 0.5vw;
+  border-width: .25px .25px .25px 0;
+  border-style: solid;
+  font: inherit;
+}
+.buttonHolder{
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+.signupContainer{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: transparent;
+  border-top-left-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+  border-style: solid;
+  border-width: .25px 0 .25px 0.25px;
+  text-transform: uppercase;
+  padding: 1vh 1vw;
+  font-size: inherit;
+
+}
+.submitContainer{
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: transparent;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+  border-width: .25px .25px .25px 0;
+  padding: 1vh 1vw;
+  border-style: solid;
+  font-size: inherit;
+}
+.verticalLine2{
+  width: 0vw;
+  height: 5vh;
+  border-style: solid;
+  border-width: 0 0 0 .25px;
+  border-color: white;
+}
+button.shuffleContainer:hover{
+  background-color: black;
+  opacity: 0.5;
+  transition-duration: 0.7s;
+}
+button.sortContainer:hover{
+  background-color: black;
+  opacity: 0.5;
+  transition-duration: 0.7s;
+  
+}
+button.filterContainer:hover{
+  background-color: black;
+  opacity: 0.5;
+  transition-duration: 0.7s;
+}
+
+@media screen and (max-width: 768px){
+  .otherDetails{
+      flex-direction: column;
+      font-size: 2.1vh;
+
+  }
+  .problemHolder{
+      width: 85vw;
+  }
+  .problemName{
+      font-size: 10vw;
+      text-overflow: ellipsis;
+      padding-top: 1vh;
+
+  }
+  .buttonHolder{
+      font-size: 5.5vw;
+      
+  }
+  .filterContainer{
+      padding: 1vh 4vw;
+      border-width: .5px 0 .5px 0.5px;
+
+  }
+  .shuffleContainer{
+      padding: 1vh 4vw;
+      border-width: .5px 0 .5px 0;
+
+  }
+  .sortContainer{
+      padding: 1vh 4vw;
+      border-width: .5px .5px .5px 0;
+  }
+}
