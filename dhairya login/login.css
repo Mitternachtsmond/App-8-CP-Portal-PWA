@@ -185,15 +185,15 @@ button.filterContainer:hover{
 }
 
 @media screen and (max-width: 768px){
-  .otherDetails{
+  .loginContainer{
       flex-direction: column;
       font-size: 2.1vh;
 
   }
-  .problemHolder{
+  .loginHolder{
       width: 85vw;
   }
-  .problemName{
+  .loginText{
       font-size: 10vw;
       text-overflow: ellipsis;
       padding-top: 1vh;
@@ -201,20 +201,20 @@ button.filterContainer:hover{
   }
   .buttonHolder{
       font-size: 5.5vw;
-      
+      width: 70vw;
   }
-  .filterContainer{
-      padding: 1vh 4vw;
-      border-width: .5px 0 .5px 0.5px;
-
+  .username{
+    width: 80vw;
   }
-  .shuffleContainer{
-      padding: 1vh 4vw;
-      border-width: .5px 0 .5px 0;
-
+  .password{
+    width: 80vw;
   }
-  .sortContainer{
+  .signupContainer{
       padding: 1vh 4vw;
-      border-width: .5px .5px .5px 0;
+      border-width: .5px 0.5px .5px 0.5px;
+  }
+  .submitContainer{
+      padding: 1vh 4vw;
+      border-width: .5px .5px .5px 0.5px;
   }
 }
