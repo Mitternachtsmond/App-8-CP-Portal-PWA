@@ -218,9 +218,19 @@ const printArray=async ()=>
     cfState=document.getElementById("codeforcesCB").checked;
     ccState=document.getElementById("codechefCB").checked;
     lcState=document.getElementById("leetcodeCB").checked;
+    let timesort=document.getElementById("timeSort").checked;
+    if(timesort){
     array.sort(function (a,b){
         return (a.time - b.time);
     });
+    }
+    else
+    {
+        array.sort(function (a,b){
+            return (a.dur - b.dur);
+        });
+    }
+
     // console.log(cfState);
     // console.log(ccState);
     // console.log(lcState);
@@ -240,9 +250,10 @@ const printArray=async ()=>
 async function start(){
     await fetchDetails();
     await printArray();
-    let doneButton=document.querySelector(".donePlatformButton");
-    doneButton.addEventListener("click",printArray);
-
+    let doneButton=document.querySelector(".doneFilterButton");
+    doneButton.addEventListener("click",await printArray);
+    let doneSortButton=document.querySelector(".doneSortButton");
+    doneSortButton.addEventListener("click",await printArray);
 }
 start();
 
