@@ -10,3 +10,10 @@ btn.addEventListener('click',()=>
     else
     content.style.display = "inherit";
 })
+
+let loginButton=document.getElementById("loginButton");
+const login=()=>
+{
+    document.location.href="/login";
+}
+loginButton.addEventListener("click",login);

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/login.css">
+{{>metatags}}
+</head>
+<body id="mainContent">
+    <div class="headingContainer">
+        {{>header}}
+    </div>
+    <div class="mainContainer">
+        <div class="emptyTop"></div>
+        <div class="siteLogo">
+            <div class="logoHolder"><img src="images/user-icon.png" class="logo"></div>
+        </div>
+        <div class="emptyBottom">
+            <div class="verticalLine"></div>
+        </div>
+            <div class="contentContainer">
+                <div class="loginHolder">
+                    <div class="loginText">LOGIN
+                    </div>
+                    <div class="loginContainer">
+                      <form class="loginForm">
+                        <input type="text" class="username"placeholder="Username/e-mail">
+                        <input type="text" class="password" placeholder="Password">
+                      </form>
+                    </div>
+                </div>
+                <div class="verticalLine2"></div>
+                <div class="buttonHolder">
+                    <button class="signupContainer" >Sign up</button>
+                    
+                    <button class="submitContainer">Submit</button>
+                </div>
+        </div>
+    </div>
+    <script src="script/common_script/header.js"></script>
+</body>
