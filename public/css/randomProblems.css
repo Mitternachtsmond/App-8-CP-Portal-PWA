@@ -184,6 +184,8 @@ div.problemHolder:hover{
     .problemName{
         font-size: 10vw;
         text-overflow: ellipsis;
+        padding-top: 1vh;
+
     }
     .buttonHolder{
         font-size: 5.5vw;
@@ -191,14 +193,16 @@ div.problemHolder:hover{
     }
     .filterContainer{
         padding: 1vh 4vw;
+        border-width: .5px 0 .5px 0.5px;
 
     }
     .shuffleContainer{
         padding: 1vh 4vw;
+        border-width: .5px 0 .5px 0;
 
     }
     .sortContainer{
         padding: 1vh 4vw;
-
+        border-width: .5px .5px .5px 0;
     }
 }

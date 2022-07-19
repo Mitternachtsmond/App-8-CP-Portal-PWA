@@ -1,25 +1,3 @@
-
-
-
-function showMenu() {
-    document.getElementById("myMenu").classList.toggle("show");
-  }
-  window.onclick = function(event) {
-    if (!event.target.matches('.menuButton')) {
-      var dropdowns = document.getElementsByClassName("menuContent");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  } 
-
-// i dont quite understand this code rn but i will soon after seeing the js projects
-// here's the link for it https://www.w3schools.com/howto/howto_js_dropdown.asp
-
 const problemName = document.querySelector('.problemName')
 const rating = document.querySelector('.rating')
 const tag = document.querySelector('.tags')
@@ -29,33 +7,45 @@ const redirect = document.querySelector('.problemHolder')
 siteName.innerHTML = "CodeForces"
 let contestId,index;
 
-
-const problemData = () => {
-  let num = Math.floor(Math.random() * 7000)
-
-
-  fetch('https://codeforces.com/api/problemset.problems')
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(`rating value is ${data.result.problems[num].rating}`)
-    if (data.result.problems[num].rating){
-      contestId=data.result.problems[num].contestId;
-      index=data.result.problems[num].index;
-      problemName.innerHTML = data.result.problems[num].name 
-      rating.innerHTML = data.result.problems[num].rating
-      tag.innerHTML = data.result.problems[num].tags[0]}
-    else{
-      problemData();
+let arrayOfData=[];
+const problemData = async () => {
+    let res=await fetch('https://codeforces.com/api/problemset.problems')
+    let data=await res.json();
+    let len=data.result.problems.length;
+    for(let i=0;i<len;i++)
+    {
+      if (data.result.problems[i].rating){
+      let obj={
+        contestId:data.result.problems[i].contestId,
+        index:data.result.problems[i].index,
+        name:data.result.problems[i].name,
+        rating:data.result.problems[i].rating,
+        tag:data.result.problems[i].tags[0]
+      };
+      arrayOfData.push(obj);
+      }
     }
-  })
-  .catch((error) => {
-    console.log(error);
-  } )
+}
+
+
+const printData=()=>
+{
+    let num = Math.floor(Math.random() * arrayOfData.length);
+    problemName.innerHTML = arrayOfData[num].name; 
+    rating.innerHTML = arrayOfData[num].rating; 
+    tag.innerHTML = arrayOfData[num].tag; 
+    contestId=arrayOfData[num].contestId; 
+    index=arrayOfData[num].index; 
 }
 const relink = () =>{
   window.location.href = `https://codeforces.com/problemset/problem/${contestId}/${index}`;
 }
-problemData();
+const mainfunction=async()=>
+{
+await problemData();
+printData();
+}
+mainfunction();
 
-shuffleButton.addEventListener("click", problemData); 
+shuffleButton.addEventListener("click", printData); 
 redirect.addEventListener("click",relink);
