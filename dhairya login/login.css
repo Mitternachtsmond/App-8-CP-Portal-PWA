@@ -59,6 +59,10 @@
 .loginForm{
   display: flex;
   flex-direction: column;
+  height: inherit;
+  width: inherit;
+  justify-content: space-around;
+  align-items: center;
 }
 .contentContainer{
   display: flex;
@@ -70,7 +74,7 @@
 }
 .loginHolder{
   display: flex;
-  height: 35vh;
+  height: 42vh;
   width: 35vw;
   justify-content: center;
   flex-direction: column;
@@ -87,7 +91,7 @@
   letter-spacing: 0.20vw;
   text-align: center;
   font-size: 5.5vh;
-  padding-top: 5vh;
+  padding-bottom: 4vh;
   font-weight: 600;
   text-overflow: ellipsis;    
   white-space: nowrap;
@@ -107,42 +111,41 @@
   letter-spacing: 0.15vw;
 }
 .username{
-  text-transform: uppercase;
   padding: 1vh 1vw;
   background-color: transparent;
-  border-top-left-radius: 0.5vw;
-  border-bottom-left-radius: 0.5vw;
+  border-radius: 0.5vw;
   border-style: solid;
-  border-width: .25px 0 .25px 0.25px;
+  border-width: .25px 0.25px .25px 0.25px;
+  width: 25vw;
   font: inherit;
   color: white;
 }
 .password{
+  width: 25vw;
   color: white;
   background-color: transparent;
-  border-top-right-radius: 0.5vw;
   padding: 1vh 1vw;
-  border-bottom-right-radius: 0.5vw;
-  border-width: .25px .25px .25px 0;
+  border-radius: 0.5vw;
+  border-width: .25px 0.25px .25px 0.25px;
   border-style: solid;
   font: inherit;
 }
 .buttonHolder{
   height: 15vh;
+  width: 45vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.5vw;
 }
 .signupContainer{
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   background-color: transparent;
-  border-top-left-radius: 0.5vw;
-  border-bottom-left-radius: 0.5vw;
+  border-radius: .5vw;
   border-style: solid;
-  border-width: .25px 0 .25px 0.25px;
+  border-width: .25px 0.25px .25px 0.25px;
   text-transform: uppercase;
   padding: 1vh 1vw;
   font-size: inherit;
@@ -153,9 +156,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   background-color: transparent;
-  border-top-right-radius: 0.5vw;
-  border-bottom-right-radius: 0.5vw;
-  border-width: .25px .25px .25px 0;
+  border-radius: .5vw;
+  border-width: .25px .25px .25px 0.25px;
   padding: 1vh 1vw;
   border-style: solid;
   font-size: inherit;
@@ -163,9 +165,7 @@
 .verticalLine2{
   width: 0vw;
   height: 5vh;
-  border-style: solid;
-  border-width: 0 0 0 .25px;
-  border-color: white;
+  
 }
 button.shuffleContainer:hover{
   background-color: black;
