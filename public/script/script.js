@@ -98,6 +98,7 @@ const fetchFromCFUrl = async (url)=>
             let img="images/codeforcesIcon.png";
             let insertLink="https://codeforces.com/contests";
             let obj={
+                platformName:"codeforces",
                 image:img,
                 name:element.name,
                 date:insertDate,
@@ -138,6 +139,7 @@ const fetchFromCCUrl =async (url)=>
             let img="images/codechefIcon2.png";
             let insertLink=element.url;
             let obj={
+                platformName:"codechef",
                 image:img,
                 name:element.name,
                 date:insertDate,
@@ -177,6 +179,7 @@ try{
             let insertLink=element.url;
             let numDur=parseInt(element.duration);
             let obj={
+                platformName:"leetcode",
                 image:img,
                 name:element.name,
                 date:insertDate,
@@ -203,22 +206,54 @@ const fetchDetails=async ()=>
     await fetchFromLCUrl("https://kontests.net/api/v1/leet_code");
 }
 
-
-async function start(){
-    await fetchDetails();
-
-
+const printArray=async ()=>
+{
+    let lastchild=leftContent.lastElementChild;
+    while(lastchild)
+    {
+        leftContent.removeChild(lastchild);
+        lastchild=leftContent.lastElementChild;
+    }
+    let cfState,ccState,lcState;
+    cfState=document.getElementById("codeforcesCB").checked;
+    ccState=document.getElementById("codechefCB").checked;
+    lcState=document.getElementById("leetcodeCB").checked;
+    let timesort=document.getElementById("timeSort").checked;
+    if(timesort){
     array.sort(function (a,b){
         return (a.time - b.time);
     });
+    }
+    else
+    {
+        array.sort(function (a,b){
+            return (a.dur - b.dur);
+        });
+    }
+
+    // console.log(cfState);
+    // console.log(ccState);
+    // console.log(lcState);
     for(let i=0;i<array.length;i++)
     {
         // console.log(array[i].name);
         let element=array[i];
-        let htmlToAdd=getHTMLtoAdd(element.image,element.name,element.date,element.duration,element.link);
-        leftContent.insertAdjacentHTML("beforeend",htmlToAdd);
+        if((cfState && element.platformName=="codeforces") || (ccState && element.platformName=="codechef") || (lcState && element.platformName=="leetcode"))
+        {
+            console.log("here");
+            let htmlToAdd=getHTMLtoAdd(element.image,element.name,element.date,element.duration,element.link);
+            leftContent.insertAdjacentHTML("beforeend",htmlToAdd);
+        }
     };
+}
 
+async function start(){
+    await fetchDetails();
+    await printArray();
+    let doneButton=document.querySelector(".doneFilterButton");
+    doneButton.addEventListener("click",await printArray);
+    let doneSortButton=document.querySelector(".doneSortButton");
+    doneSortButton.addEventListener("click",await printArray);
 }
 start();
 
