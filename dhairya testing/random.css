@@ -16,7 +16,7 @@
 
 .siteLogo{
     width: 100vw;
-    height: 30vh;
+    height: 25vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -41,9 +41,9 @@
     border-color: white;
 }
 .logoHolder{
-    width: 26vh;
-    height: 26vh;
-    border-radius: 13vh;
+    width: 21vh;
+    height: 21vh;
+    border-radius: 11.5vh;
     border-style: solid;
     border-width: 0.5px;
     border-color: white;
@@ -52,8 +52,8 @@
     justify-content: center;
 }
 .logo{
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     
 }
 .contentContainer{
@@ -76,15 +76,18 @@
     border-color: white;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    
+    
 }
 .problemName{
+    text-align: center;
     font-size: 10.5vh;
     padding-top: 5vh;
     font-weight: 600;
     text-overflow: ellipsis;    
     white-space: nowrap;
     overflow: hidden;
-
+    width: inherit;
 }
 .otherDetails{
     height: 18vh;
@@ -104,10 +107,9 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    
+    font-size: 1.5vw;
 }
 .filterContainer{
-    padding: 1vh 1vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     background-color: transparent;
@@ -116,30 +118,31 @@
     border-style: solid;
     border-width: .25px 0 .25px 0.25px;
     text-transform: uppercase;
-    font-size: 1.5vw;
+    padding: 1vh 1vw;
+    font-size: inherit;
+
 }
 .sortContainer{
     text-transform: uppercase;
-    padding: 1vh 1vw;
-    font-size: 1.5vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     background-color: transparent;
     border-top-right-radius: 0.5vw;
     border-bottom-right-radius: 0.5vw;
     border-width: .25px .25px .25px 0;
+    padding: 1vh 1vw;
     border-style: solid;
+    font-size: inherit;
 }
 .shuffleContainer{
     text-transform: uppercase;
     padding: 1vh 1vw;
-    font-size: 1.5vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     background-color: transparent;
     border-style: solid;
     border-width: .25px 0 .25px 0;
-    
+    font-size: inherit;
 }
 .verticalLine2{
     width: 0vw;
@@ -163,4 +166,39 @@ button.filterContainer:hover{
     background-color: black;
     opacity: 0.5;
     transition-duration: 0.7s;
+}
+div.problemHolder:hover{
+    background-color: black;
+    opacity: 0.5;
+    transition-duration: 0.7s;
+}
+@media screen and (max-width: 768px){
+    .otherDetails{
+        flex-direction: column;
+        font-size: 2.1vh;
+
+    }
+    .problemHolder{
+        width: 85vw;
+    }
+    .problemName{
+        font-size: 10vw;
+        text-overflow: ellipsis;
+    }
+    .buttonHolder{
+        font-size: 5.5vw;
+        
+    }
+    .filterContainer{
+        padding: 1vh 4vw;
+
+    }
+    .shuffleContainer{
+        padding: 1vh 4vw;
+
+    }
+    .sortContainer{
+        padding: 1vh 4vw;
+
+    }
 }
