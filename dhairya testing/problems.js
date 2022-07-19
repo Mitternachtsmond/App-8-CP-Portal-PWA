@@ -27,7 +27,7 @@ const siteName = document.querySelector('.siteName')
 const shuffleButton = document.querySelector('.shuffleContainer')
 const redirect = document.querySelector('.problemHolder')
 siteName.innerHTML = "CodeForces"
-
+let contestId,index;
 
 
 const problemData = () => {
@@ -39,6 +39,8 @@ const problemData = () => {
   fetch('https://codeforces.com/api/problemset.problems')
   .then((res) => res.json())
   .then((data) => {
+      contestId=data.result.problems[num].contestId;
+      index=data.result.problems[num].index;
       console.log(`resulting link is "https://codeforces.com/problemset/problem/${data.result.problems[num].contestId}/${data.result.problems[num].index}"`);
       problemName.innerHTML = data.result.problems[num].name 
       rating.innerHTML = data.result.problems[num].rating
@@ -50,7 +52,7 @@ const problemData = () => {
   } )
 }
 const relink = () =>{
-  window.location.href = 'https://codeforces.com/problemset/problem/${data.result.problems[num].contestId}/${data.result.problems[num].index}';
+  window.location.href = `https://codeforces.com/problemset/problem/${contestId}/${index}`;
 }
 problemData();
 
