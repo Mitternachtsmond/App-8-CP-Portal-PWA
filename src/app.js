@@ -21,13 +21,9 @@ app.get("/profile",(req,res)=>
     res.render("profile.hbs");
 });
 
-app.get("/problems",(req,res)=>
+app.get("/randomProblems",(req,res)=>
 {
-    res.render("problems.hbs");
-});
-app.get("/randomproblems",(req,res)=>
-{
-    res.render("random.hbs");
+    res.render("randomProblems.hbs");
 });
 app.listen(port);
 
