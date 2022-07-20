@@ -1,6 +1,8 @@
 const express=require("express");
 const path=require("path");
 const hbs=require("hbs");
+require("./db/conn");
+require("./models/registers");
 let port= process.env.PORT || 8000;
 
 const app=express();
