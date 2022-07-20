@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/signup.css">
+{{>metatags}}
+</head>
+<body id="mainContent">
+    <div class="headingContainer">
+        {{>header}}
+    </div>
+    <div class="mainContainer">
+        <div class="emptyTop"></div>
+        <div class="siteLogo">
+            <div class="logoHolder"><img src="images/user-icon.png" class="logo"></div>
+        </div>
+        <div class="emptyBottom">
+            <div class="verticalLine"></div>
+        </div>
+            <div class="contentContainer">
+                <div class="loginHolder">
+                    <div class="loginText">SIGN UP
+                    </div>
+                    <div class="loginContainer">
+                      <form class="loginForm">
+                        <input type="text" name="uniquename" class="username"placeholder="Username">
+                        <input type="text" name="studentName"class="username"placeholder="Name">
+                        <input type="text" name="userAge"class="username"placeholder="Age">
+                        <input type="text" name="institureName"class="username"placeholder="Institute">
+                        <input type="password" name="securePassword"class="password" placeholder="Password">
+                        <input type="password" name="confirmPassword" class="password" placeholder="Confirm password">
+                      </form>
+                    </div>
+                </div>
+                <div class="verticalLine2"></div>
+                <div class="buttonHolder">
+                    <button class="signupContainer" >Login</button>
+                    
+                    <button class="submitContainer">Submit</button>
+                </div>
+        </div>
+    </div>
+    <script href="script/common_script/header.js"></script>
+</body>

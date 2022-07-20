@@ -31,6 +31,10 @@ app.get("/login",(req,res)=>
 {
     res.render("login.hbs");
 });
+app.get("/signup",(req,res)=>
+{
+    res.render("signup.hbs");
+});
 app.listen(port);
 
 
