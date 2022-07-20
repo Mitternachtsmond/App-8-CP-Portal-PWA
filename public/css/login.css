@@ -117,11 +117,13 @@
     border-radius: 0.5vw;
     border-style: solid;
     border-width: .25px 0.25px .25px 0.25px;
+    border-color: white;
     width: 25vw;
     font: inherit;
     color: white;
   }
   .password{
+    border-color: white;
     width: 25vw;
     color: white;
     background-color: transparent;
@@ -130,6 +132,11 @@
     border-width: .25px 0.25px .25px 0.25px;
     border-style: solid;
     font: inherit;
+    
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
   }
   .buttonHolder{
     height: 15vh;
@@ -141,6 +148,7 @@
     font-size: 1.5vw;
   }
   .signupContainer{
+    border-color: white;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     background-color: transparent;
@@ -154,6 +162,7 @@
   }
   .submitContainer{
     text-transform: uppercase;
+    border-color: white;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     background-color: transparent;

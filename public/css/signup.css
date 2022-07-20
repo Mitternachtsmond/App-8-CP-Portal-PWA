@@ -119,8 +119,11 @@
   width: 25vw;
   font: inherit;
   color: white;
+  border-color: white;
+
 }
 .password{
+  border-color: white;
   width: 25vw;
   color: white;
   background-color: transparent;
@@ -151,12 +154,17 @@
   font-size: inherit;
 
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 .submitContainer{
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  color: #FFFFFF;
   background-color: transparent;
   border-radius: .5vw;
+  border-color: #FFFFFF;
   border-width: .25px .25px .25px 0.25px;
   padding: 1vh 1vw;
   border-style: solid;
