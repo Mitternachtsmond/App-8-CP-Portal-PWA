@@ -3,10 +3,7 @@
   padding:0;
   box-sizing: border-box;
 }
-.submission{
-  width: 0;
-  height: 0;
-}
+
 
 .mainContainer{
   width: 100vw;

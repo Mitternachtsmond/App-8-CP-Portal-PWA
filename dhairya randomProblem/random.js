@@ -37,7 +37,7 @@ const problemData = () => {
   fetch('https://codeforces.com/api/problemset.problems')
   .then((res) => res.json())
   .then((data) => {
-    console.log(`rating value is ${data.result.problems[num].rating}`)
+    console.log(`rating value is ${data.result.problems[num].rating}`)  
     if (data.result.problems[num].rating){
       contestId=data.result.problems[num].contestId;
       index=data.result.problems[num].index;

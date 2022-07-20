@@ -28,5 +28,5 @@ const schema=new mongoose.Schema({
     }
 });   
 
-const Register=new mongoose.model("Register",schema );
+const Register=new mongoose.model("Register",schema);
 module.exports = Register;
