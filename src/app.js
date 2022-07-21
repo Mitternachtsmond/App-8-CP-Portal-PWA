@@ -37,4 +37,20 @@ app.get("/signup",(req,res)=>
 });
 app.listen(port);
 
+//Dhairya's Changes
+
+app.post("/login",async(req,res)=>
+{
+try {
+    const userName = req.body.userName;
+    const passWord = req.body.passWord;
+    const useruserName = await database.findOne({userName:userName}); //need to resolve database,userName & password field to match that of database
+    if (useruserName.passWord === passWord){
+        res.status(201)/render("index")
+    }
+} catch (error) 
+{
+    res.status(400).send("invalid") 
+}
+});
 
