@@ -2,7 +2,7 @@ const express=require("express");
 const path=require("path");
 const hbs=require("hbs");
 require("./db/conn");
-require("./models/registers");
+const Register=require("./models/registers");
 let port= process.env.PORT || 8000;
 
 const app=express();
@@ -13,6 +13,41 @@ app.use(express.static(staticPath));
 app.set("view engine","hbs");
 hbs.registerPartials(partialPath);
 app.set("views",viewPath);
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
+
+app.post("/signup",async (req,res)=>
+{
+    try {
+        const entry=await new Register({
+            username:req.body.uniqueName,
+            name:req.body.studentName,
+            age:req.body.userAge,
+            institute:req.body.instituteName,
+            password:req.body.securePassword,
+            confirmPassword:req.body.confirmPassword
+        })
+        try{
+        const savedEntry=await entry.save()
+        console.log(savedEntry);
+        res.render('login.hbs');
+        }
+        catch(error){
+            res.send(`<h1> the following error occured </h1> ${error}`);
+        }
+    //     try{
+    //     entry.save();
+    //     res.render("login.hbs");
+    //     }
+    //     catch(err){
+    //         console.log("Invalid Data");
+    //     }
+    } catch (err) {
+        res.send(err+"error found");
+    }
+})
+
+
 
 app.get("/",(req,res)=>
 {
