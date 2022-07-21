@@ -1,15 +1,15 @@
 let submission = document.querySelector('.submission')
 let submitButton = document.querySelector('.submitContainer')
-let loginButton=document.querySelector(".signupContainer");
-let checker = 1;
+let loginbtn=document.querySelector(".signupContainer");
 
 const submit = () =>{
     submission.click();
 }
-const login=()=>
+const login2=()=>
 {
     document.location.href="/login";
     console.log(`button has been clicked `);
 }
-loginButton.addEventListener("click",login);
+loginbtn.addEventListener("click",login2);
 submitButton.addEventListener('click',submit);
+
