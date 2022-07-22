@@ -35,13 +35,6 @@ app.post("/signup",async (req,res)=>
         catch(error){
             res.send(`<h1> the following error occured </h1> ${error}`);
         }
-    //     try{
-    //     entry.save();
-    //     res.render("login.hbs");
-    //     }
-    //     catch(err){
-    //         console.log("Invalid Data");
-    //     }
     } catch (err) {
         res.send(err+"error found");
     }
@@ -79,13 +72,27 @@ app.post("/login",async(req,res)=>
 try {
     const userName = req.body.userName;
     const passWord = req.body.passWord;
-    const useruserName = await database.findOne({userName:userName}); //need to resolve database,userName & password field to match that of database
-    if (useruserName.passWord === passWord){
-        res.status(201)/render("index")
+    console.log(userName);
+    console.log(passWord);
+    const count = await Register.findOne({username:userName}).count();
+    console.log(count);
+    if(count==0)
+    {
+        res.send("<h1> No user found kindly register </h1>");
     }
-} catch (error) 
+    else{
+    const useruserName = await Register.findOne({username:userName});
+    console.log(useruserName);
+        if (useruserName.password == passWord){
+            res.status(201).render("index")
+        }
+        else{
+            res.send("<h1> wrong Credentials </h1>");
+        }
+    }
+}catch (error) 
 {
-    res.status(400).send("invalid") 
+    res.status(400).send(error);
 }
 });
 
