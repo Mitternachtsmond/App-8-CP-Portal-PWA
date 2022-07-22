@@ -20,11 +20,18 @@ height: inherit;
 flex-direction: row;
 }
 .leftContainer{
-width: 30%;
+    float: left;
+    width: 33.33%;
+
 height: inherit;
 }
 .rightContainer{
     width: 70%;
     background-color: white;
     height: inherit;
+}
+img{
+    padding: 1vw;
+    height: 27vh;
+    width: 32vh;
 }
