@@ -17,7 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 app.post("/signup",async (req,res)=>
-{
+{ 
+    if Register.findOne(username:`${req.body.uniqueName}`){ //try this line
     try {
         const entry=await new Register({
             username:req.body.uniqueName,
@@ -38,7 +39,7 @@ app.post("/signup",async (req,res)=>
     } catch (err) {
         res.send(err+"error found");
     }
-})
+    }
 
 
 
