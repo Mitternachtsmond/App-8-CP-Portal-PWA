@@ -6,14 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link rel="stylesheet" href="profile.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="body">
+    
     <div class="container">
         <div class="leftContainer">
-            <img src="img.jpg" alt="user image" width="">
+            <img src="img.jpg" alt="user image" >
+
+            <button id="emailButton" class="btn-email"> Email</button>
+
+<button class="btn"><i class="fa fa-github"></i></button>
+<button class="btn"><i class="fa fa-linkedin"></i></button>
+<button class="btn"><i class="fa fa-twitter"></i></button>
+
+
+            
         </div>
-        <div class="rightContainer"></div>
+
+        <div class="rightContainer">
+            <div id="upper">
+                <h1><b>USERNAME</b></h1>
+                <p><b>Institute Name</b></p>
+                <p><b>Position of candidate</b></p>
+                <button class="btn btn-primary" type="button">Edit</button>
+            </div>
+            <div id="lower">
+                <h1>Pie Chart</h1>
+                <button id="Button" class="btn-f"> Favorite</button>
+                <button id="Button" class="btn-t"> To-do</button>
+
+            </div>
+        </div>
     </div>
+
 
 </body>
 </html>

@@ -129,9 +129,9 @@ img{
 
 #emailButton{
 position:absolute;
-top:414px;
+top:414vh;
 left :220px;
 background-color: black;
-border: 2px solid black;
+border: 2px ;
 border-radius: 2px;
 }

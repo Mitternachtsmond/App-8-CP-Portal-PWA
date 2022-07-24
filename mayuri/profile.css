@@ -20,18 +20,95 @@ height: inherit;
 flex-direction: row;
 }
 .leftContainer{
+    position: relative;
+    display: inline;
     float: left;
     width: 33.33%;
-
 height: inherit;
+justify-content: center;
+
+
 }
 .rightContainer{
     width: 70%;
     background-color: white;
     height: inherit;
+    display: inline-block;
 }
 img{
     padding: 1vw;
-    height: 27vh;
-    width: 32vh;
+    height: 27%;
+    width: 38%;
+    margin: 8vw;
+    vertical-align: middle;
+    
+    
 }
+@media only screen and (max-width:768px){
+    img{
+        width: 33.33%;
+    }
+    
+}
+
+
+.btn{
+margin: 1vw;
+padding: 1vw;
+display: inline-block;
+cursor: pointer;
+}
+
+
+.btn-email{
+background-color:green;
+color:black;
+border: 2px solid grey;
+cursor: pointer;
+border-radius: 0.2rem;
+top: 50%;
+left: 50%;
+margin: 4vw;
+padding: 1vw; }
+
+#upper{
+background-color: rgb(55, 53, 53);
+text-align: center;
+font-size: medium;
+    margin:1vw ;
+    padding: 1vw;
+    height: 50%;
+    width: 100%;
+
+}
+#lower{
+    background-color: rgb(55, 53, 53);
+    text-align: center;
+        margin:2vw;
+        height:44.5%;
+        width: 100%;
+
+
+}
+.btn-primary{
+    background-color: black;
+    border-radius: 3px;
+   width: 15%;
+   color: white;
+   cursor: pointer;
+}
+#Button{
+    background-color: black;
+    color: white;
+    border-radius:2px ;
+    margin: 11vw;
+    padding: 1vw;
+display: inline;
+cursor: pointer;
+    
+
+}
+
+
+
+
