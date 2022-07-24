@@ -99,13 +99,13 @@ li:hover {
         font-size: 3vh;
     }
     .leftExpand{
-        width:3vw;
+        width:8vw;
     }
     .expand{
         font-size:3vh;
     }
     #loginButton{
-        font-size: 1vh;
+        font-size: 2vh;
     }
     .expandContent{
         width:75%;
