@@ -13,9 +13,10 @@ body{
 .heading{
     position: absolute;
     z-index: 10;
-    width:100%;
-    background-color: rgb(19, 19, 19);
+    width:100vw;
+    background-color: transparent;
     height:15vh;
+    opacity: 100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,27 +26,38 @@ body{
 .leftHeading{
     margin:1vw;
     z-index: 10;
+    opacity: 100%;
     /* padding-left:2vw;
     padding-top: 3vh;
     padding-bottom: 2vh; */
 }
 .leftHeadingContent{
+    font-family: Elianto;
     color:white;
     margin:1vw;
     font-size:6vh;
-    font-family: 'Arima', cursive;
-    text-shadow: 2px 2px 5px rgb(130, 130, 138);
+    text-shadow: 1.5px 1.5px 8px rgb(130, 130, 138);
 }
 
 .leftExpand{
     margin:1vw;
-    background-color: black;
+    background-color: transparent;
     width:4vw;
+    border-style: none;
+    border-radius: 1vw;
+}
+
+button.leftExpand:hover{
+    background-color: black;
+    opacity: 50%;
+    transition: 0.5s;
 }
 
 .expand{
     font-size:6vh;
     color:white;
+    text-shadow: 1.5px 1.5px 8px rgb(130, 130, 138);
+
     /* height:8vh; */
 }
 
