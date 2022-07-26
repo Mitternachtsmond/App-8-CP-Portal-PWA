@@ -19,6 +19,7 @@ app.use(express.urlencoded({extended:false}));
 app.post("/signup",async (req,res)=>
 { 
     try {
+        if(req.body.securePassword === req.body.confirmPassword){
         const entry=await new Register({
             username:req.body.uniqueName,
             name:req.body.studentName,
@@ -34,6 +35,11 @@ app.post("/signup",async (req,res)=>
         }
         catch(error){
             res.send(`<h1> the following error occured </h1> ${error}`);
+        }
+        }
+        else
+        {
+            res.send(`<h1> Password not matching </h1>`)
         }
     } catch (err) {
         res.send(err+"error found");

@@ -121,20 +121,22 @@
   border-width: .25px 0.25px .25px 0.25px;
   width: 25vw;
   font: inherit;
-  color: white;
   border-color: white;
+  color:black;
+  font-weight: 505;
 
 }
 .password{
   border-color: white;
   width: 25vw;
-  color: white;
   background-color: transparent;
   padding: 1vh 1vw;
   border-radius: 0.5vw;
   border-width: .25px 0.25px .25px 0.25px;
   border-style: solid;
   font: inherit;
+  color:black;
+  font-weight: 505;
 }
 .buttonHolder{
   height: 8vh;
@@ -150,6 +152,7 @@
   color: white;
   background-color: transparent;
   border-radius: .5vw;
+  border-color: white;
   border-style: solid;
   border-width: .25px 0.25px .25px 0.25px;
   text-transform: uppercase;

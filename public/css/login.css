@@ -120,19 +120,20 @@
     border-color: white;
     width: 25vw;
     font: inherit;
-    color: white;
+    color:black;
+    font-weight: 505;
   }
   .password{
     border-color: white;
     width: 25vw;
-    color: white;
+    color:black;
     background-color: transparent;
     padding: 1vh 1vw;
     border-radius: 0.5vw;
     border-width: .25px 0.25px .25px 0.25px;
     border-style: solid;
     font: inherit;
-    
+    font-weight: 505;
   }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
