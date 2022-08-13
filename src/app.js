@@ -4,6 +4,7 @@ const hbs=require("hbs");
 require("./db/conn");
 const Register=require("./models/registers");
 let port= process.env.PORT || 8000;
+// const bcrypt=require("bcrypt");
 
 const app=express();
 const staticPath=path.join(__dirname,"../public");
@@ -93,7 +94,7 @@ try {
             res.status(201).render("index")
         }
         else{
-            res.send("<h1> wrong Credentials </h1>");
+            res.send("<h1> Wrong Credentials </h1>");
         }
     }
 }catch (error) 
