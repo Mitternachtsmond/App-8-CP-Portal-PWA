@@ -14,7 +14,7 @@ body{
     position: absolute;
     z-index: 10;
     width:100vw;
-    background-color: transparent;
+    background-color:black;
     height:15vh;
     opacity: 100%;
     display:flex;
@@ -32,7 +32,7 @@ body{
     padding-bottom: 2vh; */
 }
 .leftHeadingContent{
-    font-family: Elianto;
+    /* font-family: Elianto; */
     color:white;
     margin:1vw;
     font-size:6vh;
